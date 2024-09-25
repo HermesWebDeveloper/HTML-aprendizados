@@ -44,7 +44,7 @@
     <hr>
     <div>
         <h2>Praticando...</h2>
-        <p>1. Bora de citações??</p>
+        <h4>1. Bora de citações??</h4>
         <p>Here is a quote from WWF's website:</p>
         <blockquote cite="http://www.worldwildlife.org/who/index.html">
             For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
@@ -54,6 +54,35 @@
             <ul>
                 <li><q>Build a future where people live in harmony with nature.</q></li>
             </ul>
+            <li>Para abreviações usamos &lt;abbr&gt; e a propriedade title:</li>
+            <ul>
+                <li>Essa página foi escrita em <abbr title="Hiper Text Markup Language">HTML.</abbr></li>
+            </ul>
+            <li>Para endereços podemos utilizar &lt;address&gt;...</li>
+            <li>Para títulos de obras podemos utilizar &lt;cite&gt;:</li>
+            <ul>
+                <li><cite>A Única Coisa</cite> é o melhor livro que eu já li!</li>
+            </ul>
+            <li>Para inverter a ordem da frase podemos utilizar &lt;bdo dir="rtl"&gt;...&lt;/bdo&gt;:</li>
+            <ul>
+                <li>
+                    <bdo dir="rtl">Para inverter a ordem da frase podemos utilizar &lt;bdo dir="rtl"&gt;...&lt;/bdo&gt;!</bdo>
+                </li>
+            </ul>
+        </ul>
+        <h4>2. Importante sobre LINKS</h4>
+        <ul>
+            <li>Os links são definidos pela tag &lt;a&gt;;</li>
+            <li>O atributo target define como deve ser acessado o conteúdo do link. Oções de valores para o atributo:</li>
+            <li>
+                <ul>
+                    <li>_self- Padrão. Abre o documento na mesma janela/guia em que foi clicado</li>
+                    <li>_blank- Abre o documento em uma nova janela ou aba</li>
+                    <li>_parent- Abre o documento no quadro pai</li>
+                    <li>_top- Abre o documento no corpo inteiro da janela</li>
+                </ul>
+            </li>
+            <li>Você pode criar marcadores nos links. Por exemplo, quando você quer que um link direcione o usuário para uma parte específica da página web atual que tenha determinado id, basta colocar como valor para o href "#" e em seguida o id. Exemplo: href="#id1".</li>
         </ul>
     </div>
 </body>
