@@ -1,36 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práticas de HTML</title>
     <link rel="icon" type="x-icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47d.svg">
+    <style>
+        p,
+        li {
+            margin: 10px;
+        }
+
+        .img-border {
+            border: solid 5px saddlebrown;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 3% 7%;
+            background-color: SaddleBrown;
+        }
+
+        #content {
+            background-color: bisque;
+            padding: 10px 30px;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: saddlebrown;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        hr {
+            border: solid 1px sandybrown;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <h2>Barra de Navegação</h2>
-        <ul>
-            <li>
-                <a href="index1.html">Página de Rascunhos</a>
-            </li>
-        </ul>
-    </div>
-    <section id="exercicios">
-        <div>
-            <h2>Exercícios - Seção 1</h2>
-            <ol>
-                <li><strong>Crie uma barra de navegação com links estilizados:</strong></li>
-                <ul>
-                    <li>Crie uma barra de navegação horizontal com pelo menos 5 links.</li>
-                    <li>Adicione um link que abre em uma nova aba (target="_blank").</li>
-                    <li>Use pseudo-classes (:hover, :active, :visited) para estilizar o comportamento dos links.</li>
-                </ul>
-                <li><strong>Links internos e âncoras:</strong></li>
-                <ul>
-                    
-                </ul>
-            </ol>
+    <div id="content">
+        <div id="nav">
+            <h2>Barra de Navegação</h2>
+            <ul>
+                <li>
+                    <a href="index1.html">Página de Rascunhos</a>
+                </li>
+                <li>
+                    <a href="index1.html" target="_blank">Página de Rascunhos (Em nova guia)</a>
+                </li>
+                <li><a href="#section1">Seção 1</a></li>
+                <li><a href="#section2">Seção 2</a></li>
+                <li><a href="#section3">Seção 3</a></li>
+            </ul>
         </div>
+        <section id="exercicios">
+            <hr>
+            <div id="section1">
+                <h2>Exercícios - Seção 1</h2>
+                <ol>
+                    <li><strong>Crie uma barra de navegação com links estilizados:</strong></li>
+                    <ul>
+                        <li><input type="checkbox" checked> Crie uma barra de navegação horizontal com pelo menos 5
+                            links.</li>
+                        <li><input type="checkbox" checked>Adicione um link que abre em uma nova aba (target="_blank").
+                        </li>
+                        <li><input type="checkbox" checked>Use pseudo-classes (:hover, :active, :visited) para estilizar
+                            o comportamento dos links.
+                        </li>
+                    </ul>
+                    <li><strong>Links internos e âncoras:</strong></li>
+                    <ul>
+                        <li><input type="checkbox" checked>
+                            Crie uma página longa com seções diferentes.
+                        </li>
+                        <li><input type="checkbox" checked>
+                            No topo da página, crie um índice com links que naveguem diretamente para diferentes seções
+                            da página usando âncoras (#id).
+                        </li>
+                        <li><input type="checkbox" checked>
+                            Adicione um link que retorne ao topo da página em cada seção.
+                        </li>
+                    </ul>
+                    <li><strong>Imagens responsivas com &lt;picture&gt; e srcset:</strong></li>
+                    <ul>
+                        <li>
+                            <input type="checkbox" checked> Adicione três versões de uma mesma imagem (pequena, média e grande)
+                            usando o elemento
+                            &lt;picture&gt; e o atributo srcset para exibir a versão correta com base no tamanho da
+                            tela.
+                        </li>
+                        <li>
+                            <picture>
+                                <source media="(min-width: 950px)" srcset="imgs/cafe.jpg">
+                                <source media="(min-width: 650px)" srcset="imgs/cafe-grande.jpg">
+                                <source media="(min-width: 410px)" srcset="imgs/cafe-medio.jpg">
+                                <img class="img-border" src="imgs/cafe.jpg" width="500px" alt="Imagem de um café">
+                            </picture>
+                        </li>
+                    </ul>
+                    <li><strong>Imagens com legendas e figcaption:</strong></li>
+                    <ul>
+                        <li><input type="checkbox">Crie uma galeria de fotos com legendas usando o elemento
+                            <code>&lt;figure&gt;</code> e
+                            <code>&lt;figcaption&gt;</code>.
+                        </li>
+                        <li><input type="checkbox">Adicione um efeito de zoom na imagem ao passar o mouse e mantenha a
+                            legenda sempre visível.
+                        </li>
+                    </ul>
+                </ol>
+                <div>
+                    <a href="#nav">Voltar ao topo</a>
+                </div>
+            </div>
+            <hr>
+            <div id="section2">
+                <h2>Exercícios - Seção 2</h2>
+            </div>
+            <hr>
+            <div id="section3"></div>
+            <h2>Exercícios - Seção 3</h2>
+    </div>
     </section>
+    </div>
 </body>
+
 </html>
