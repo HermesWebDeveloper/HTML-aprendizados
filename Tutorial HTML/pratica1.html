@@ -16,6 +16,11 @@
             border: solid 5px saddlebrown;
         }
 
+        table, th, td, tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
         body {
             font-family: sans-serif;
             margin: 3% 7%;
@@ -112,9 +117,12 @@
                             <code>&lt;figure&gt;</code> e
                             <code>&lt;figcaption&gt;</code>.
                         </li>
-                        <li><input type="checkbox">Adicione um efeito de zoom na imagem ao passar o mouse e mantenha a
-                            legenda sempre visível.
-                        </li>
+                        <div>
+                            <figure>
+                                <img src="https://s2.glbimg.com/UBtRtJyV6161MsPL7iMi5ci3294=/s.glbimg.com/jo/g1/f/original/2013/07/03/camaro-transformers-620.jpg" width="300px">
+                                <figcaption><i>Camaro Amarelo</i></figcaption>
+                            </figure>
+                        </div>
                     </ul>
                 </ol>
                 <div>
@@ -124,6 +132,54 @@
             <hr>
             <div id="section2">
                 <h2>Exercícios - Seção 2</h2>
+                <div>
+                    <ol>
+                        <li>
+                            Crie uma tabela que exiba uma lista de frutas. A tabela deve ter as seguintes colunas: Nome da Fruta, Cor e Preço. Preencha a tabela com pelo menos 5 frutas diferentes.
+                        </li>
+                        <div>
+                            <table>
+                                <caption>Tabela de Frutas</caption>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Cor</th>
+                                    <th>Preço</th>
+                                </tr>
+                                <tr>
+                                    <td>Maçã</td>
+                                    <td>Vermelha</td>
+                                    <td>R$ 15,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Banana</td>
+                                    <td>Amarela</td>
+                                    <td>R$ 12,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Abacate</td>
+                                    <td>Verde</td>
+                                    <td>R$ 1,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Morango</td>
+                                    <td>Vermelho</td>
+                                    <td>R$ 40,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiwi</td>
+                                    <td>Verde</td>
+                                    <td>R$ 23,00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            Crie uma tabela que exiba uma lista de alunos com as colunas: Nome, Idade, e Nota. Use CSS para estilizar a tabela, adicionando bordas, cores de fundo e alterando a cor do texto.
+                        </li>
+                        <li>
+                            Crie uma tabela que represente um cardápio de um restaurante. Use rowspan e colspan para combinar células. A tabela deve ter as colunas: Categoria, Prato, e Preço, com algumas categorias combinadas.
+                        </li>
+                    </ol>
+                </div>
             </div>
             <hr>
             <div id="section3"></div>
